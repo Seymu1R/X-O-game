@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cell-size:100px;
+    --mark-size: calc(var(--cell-size)* .9);
+}
+.board{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);    
+    width: 20%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .cell{
+        border: 1px solid black;        
+        height: var(--cell-size);
+        width: var(--cell-size);
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        cursor: pointer;
+        span{
+            cursor: not-allowed;
+            font-size: var(--mark-size);
+        }
+    }
+        
+}
