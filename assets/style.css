@@ -33,4 +33,36 @@
 .board .cell span {
   cursor: not-allowed;
   font-size: var(--mark-size);
+}
+.board .vinnig-status h4 {
+  margin-top: 20px;
+  font-size: 40px;
+}
+.board .vinnig-status h4 span {
+  font-size: 50px;
+  color: red;
+}
+.board button {
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+}
+.board .overlay {
+  display: none;
+  text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.501);
+  width: 100%;
+  height: 300px;
+}
+.board .overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
 }/*# sourceMappingURL=style.css.map */
